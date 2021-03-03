@@ -5,3 +5,6 @@ declare namespace Express {
     };
   }
 }
+
+// Incluir o codigo abaixo na Request do Express
+// user: { id: string };
