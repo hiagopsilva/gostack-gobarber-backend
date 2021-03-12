@@ -9,8 +9,12 @@ interface TokenPayload {
   sub: string;
 }
 
+interface NewRequest extends Request {
+  user: { id: string };
+}
+
 export default function ensureAuthenticated(
-  request: Request,
+  request: NewRequest,
   response: Response,
   next: NextFunction,
 ): void {
